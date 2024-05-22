@@ -1,0 +1,65 @@
+<div id="iconn2">
+<a href="#" class="open-button" onclick="openForm()">login</a>
+</div>
+<div class="popup" id="myForm">
+<form class="contain-form" >
+<h1 class="login">login </h1>
+<div class="data">
+Email<br><input type="text" id="fname" name="fname" required value="name"><br>
+</div>
+<div class="data">
+Password<br><input type="text" id="pass" name="fname" required value="password"><br>
+</div>
+
+<button type="submit" class="btn">Login</button><br>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+
+.open-button{
+
+
+
+display:flex;
+flex-direction:column;
+border:2px solid blue;
+background:black;
+
+border-radius:50px 0px 0px 50px;}
+
+
+
+
+.popup{
+position:absolute;
+border-radius:10px;
+top:150px;
+background:blue;
+transform:translate(400px);
+padding:80px;
+display:none;
+}
+
+
+#iconn2 a{
+
+font-size:25px;
+padding:25px;
+color:white;
+text-transform:uppercase;
+text-decoration:none;
+}
+#iconn2 a:hover{
+transform:translate(-160px);
+}
